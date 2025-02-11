@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Lab-1 Static Site</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Vladkot124">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vladyslav Andres">
+    <meta name="description" content="A personal website for Vladyslav Andres">
+    <title>Vladyslav Andres' Website</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <p>Vladkot124</p>
+    <div class="container">
+        <!-- Header Section -->
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home Page">Home</a></li>
+                    <li><a href="links.html" title="External Links">Links</a></li>
+                    <li><a href="glossary.html" title="Glossary of Terms">Glossary</a></li>
+                </ul>
+            </nav>
+            <picture>
+                <source srcset="images/sc-logo.png" type="image/svg+xml">
+                <img src="images/sc-logo.png"
+                     srcset="images/sc-logo@1.5x.png 1.5x,images/sc-logo@2x.png 2x" 
+                     alt="Sault College Logo" width="70" height="70">
+            </picture>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <h1>Welcome to Vladyslav Andres' Website!</h1>
+
+            <!-- Personal Photo Section -->
+            <picture>
+                <source srcset="images/my-photo.jpg" media="(min-width: 500px)">
+                <img src="images/my-photo.jpg" alt="Photo of Vladyslav Andres">
+            </picture>
+            <p><a href="images/my-photo.jpg" target="_blank" title="View Full Image">View Full Image</a></p>
+            
+            <p>I am a student at Sault College studying Computer Programming. I enjoy learning about technology and software development.</p>
+            <p>My interests include web development, blockchain, and cybersecurity. I also like gaming and exploring new programming languages.</p>
+
+            <h2>My Favourite Things</h2>
+            <figure>
+                <a href="https://www.google.com" title="Google Website">
+                    <img src="images/logo.png" alt="My favorite logo" width="150" height="150">
+                </a>
+                <figcaption>My favorite logo</figcaption>
+            </figure>
+
+            <h3>My Favorite Games</h3>
+            <ol>
+                <li>CSGO</li>
+                <li>Tankionline</li>
+                <li>Chess.com</li>
+            </ol>
+
+            <h3>Haiku</h3>
+            <p>
+                An old silent pond<br>
+                A frog jumps into the pond—<br>
+                Splash! Silence again.<br>
+                <cite>by <span class="author">Matsuo Bashō</span></cite>
+            </p>
+
+            <h3>Public Domain Audiobook</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. 
+                <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" download title="Download Audio">Download here</a>.
+            </audio>
+
+            <h3>YouTube Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YSiNcoBcDDQ?si=GVqZZ79py-1PZytV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <hr>
+            <blockquote>
+                "The only limit to our realization of tomorrow is our doubts of today."
+            </blockquote>
+            <cite>— <span class="author">Franklin D. Roosevelt</span></cite>
+            <p>© 2024 <a href="mailto:24017497@Saultcollege.ca?subject=Message from CSD112 Website" title="Email Vladyslav Andres">Vladyslav Andres</a></p>
+            <img src="images/sc-logo.png" 
+                 srcset="images/sc-logo.png, " 
+                 alt="Sault College Logo" width="70" height="70">
+        </footer>
+
+        <!-- Back to Top Link -->
+        <a href="#top" title="Back to top" aria-label="Back to top">◤</a>
+    </div>
 </body>
+
 </html>
