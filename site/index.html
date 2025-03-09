@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <style>
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid rgba(0,0,0,0); }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Vladyslav Andres">
@@ -43,8 +47,94 @@
             
             <p>I am a student at Sault College studying Computer Programming. I enjoy learning about technology and software development.</p>
             <p>My interests include web development, blockchain, and cybersecurity. I also like gaming and exploring new programming languages.</p>
-
+            <div id="making-a-table">
+                <table>
+                    <caption>Table 1. Current Courses</caption>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Instructor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CSD113</td>
+                            <td>Introduction to Programming</td>
+                            <td>Prof. Smith</td>
+                        </tr>
+                        <tr>
+                            <td>CSD114</td>
+                            <td>Web Development</td>
+                            <td>Prof. Johnson</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">End of Course List</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+            <main>
+                <div id="survey">
+                    <h1>Survey</h1>
+                    <form action="YOUR_FORMSPREE_ENDPOINT" method="post">
+                        <p>
+                            <label for="name_field">What is your name?</label>
+                            <input type="text" id="name_field" name="name_field" required>
+                        </p>
+                        <p>
+                            <label for="email_field">What is your email?</label>
+                            <input type="email" id="email_field" name="email_field" required>
+                        </p>
+                        <p>
+                            <label for="best_whole_number">Which whole number is best?</label>
+                            <input type="number" id="best_whole_number" name="best_whole_number" min="1" required>
+                        </p>
+                        <p>
+                            <label for="best_day">Which day is best?</label>
+                            <input type="date" id="best_day" name="best_day">
+                        </p>
+                        <p>
+                            <label for="best_bear">Which bear is best?</label>
+                            <select id="best_bear" name="best_bear" required>
+                                <option value="">&nbsp;</option>
+                                <option value="Black">Black</option>
+                                <option value="Brown">Brown</option>
+                                <option value="Care">Care</option>
+                                <option value="Panda">Panda</option>
+                                <option value="Polar">Polar</option>
+                                <option value="Teddy">Teddy</option>
+                            </select>
+                        </p>
+                        <fieldset>
+                            <legend>Do you like radio buttons?</legend>
+                            <ul>
+                                <li>
+                                    <label><input type="radio" name="enjoys_radio_buttons" value="yes"> Yes</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="enjoys_radio_buttons" value="no"> No</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="enjoys_radio_buttons" value="?" checked> None of your business</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <p>
+                            <label for="life_meaning">What is the meaning of life?</label>
+                            <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+                </div>
+            </main>
             <h2>My Favourite Things</h2>
+
             <figure>
                 <a href="https://www.google.com" title="Google Website">
                     <img src="images/logo.png" alt="My favorite logo" width="150" height="150">
