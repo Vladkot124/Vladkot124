@@ -32,8 +32,12 @@
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="survey.html">Survey</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+
                   </ul>
             </nav>
+        </div> 
+
             <picture>
                 <source srcset="images/sc-logo.png" type="image/svg+xml">
                 <img src="images/sc-logo.png"
@@ -48,15 +52,18 @@
 
             <!-- Personal Photo Section -->
             <picture>
-                <source srcset="images/my-photo.jpg" media="(min-width: 500px)">
+                <source srcset="images/images.jpg" media="(min-width: 500px)">
                 <img src="images/my-photo.jpg" alt="Photo of Vladyslav Andres">
             </picture>
             
             <div class="bio">
-                <p><a href="images/my-photo.jpg" target="_blank" title="View Full Image">View Full Image</a></p>
+                <p><a href="images/images.jpg" target="_blank" title="View Full Image">View Full Image</a></p>
                 <p>I am a student at Sault College studying Computer Programming. I enjoy learning about technology and software development.</p>
                 <p>My interests include web development, blockchain, and cybersecurity. I also like gaming and exploring new programming languages.</p>
-            
+                <a href="images/images.jpg" target="_blank" title="View Selfie" class="selfie-link">
+                    <img src="images/images.jpg" alt="Selfie">
+                    <img src="images/paperclip2.png" class="paperclip" alt="Paperclip">
+                  </a>
                 <div id="making-a-table">
                     <table>
                         <caption>Table 1. Current Courses</caption>
@@ -103,25 +110,50 @@
                 <li>Tankionline</li>
                 <li>Chess.com</li>
             </ol>
+            <div class="favourites">
+                <!-- Radio Buttons -->
+                <input type="radio" id="tab1" name="tabs" checked>
+                <label for="tab1">Haiku</label>
+            
+                <input type="radio" id="tab2" name="tabs">
+                <label for="tab2">Audio</label>
+            
+                <input type="radio" id="tab3" name="tabs">
+                <label for="tab3">Video</label>
+            
+                <!-- Tab Content -->
+                <div id="content1" class="tab-content">
+                    <h3>Haiku</h3>
+                    <p>
+                        An old silent pond<br>
+                        A frog jumps into the pond—<br>
+                        Splash! Silence again.<br>
+                        <cite>by <span class="author">Matsuo Bashō</span></cite>
+                    </p>
+                </div>
+            
+                <div id="content2" class="tab-content">
+                    <h3>Public Domain Audiobook</h3>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" download title="Download Audio">Download here</a>.
+                    </audio>
+                </div>
+            
+                <div id="content3" class="tab-content">
+                    <h3>YouTube Video</h3>
+                    <iframe class="rounded-video" width="560" height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="border: none;">
+</iframe>
 
-            <h3>Haiku</h3>
-            <p>
-                An old silent pond<br>
-                A frog jumps into the pond—<br>
-                Splash! Silence again.<br>
-                <cite>by <span class="author">Matsuo Bashō</span></cite>
-            </p>
-
-            <h3>Public Domain Audiobook</h3>
-            <audio controls>
-                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element. 
-                <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" download title="Download Audio">Download here</a>.
-            </audio>
-
-            <h3>YouTube Video</h3>
-            <iframe class="rounded-video" style="border: none;" width="560" height="315" src="https://www.youtube.com/embed/YSiNcoBcDDc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            </div>
+            </div>
+            
 
         
 
@@ -139,7 +171,8 @@
         </footer>
 
         <!-- Back to Top Link -->
-        <a href="#top" title="Back to top" aria-label="Back to top">◤</a>
+        <a href="#top" class="back-to-top" title="Back to top" aria-label="Back to top">◤</a>
+
     </div>
 </body>
 
